@@ -1,0 +1,64 @@
+{
+  "name": "Coaching / Client Programme",
+  "guild_id": "",
+  "options": {
+    "separator": "・",
+    "existing_channels": "archive",
+    "archive_category_name": "📦 Archive",
+    "staff_roles": ["Coach", "Admin"]
+  },
+  "roles": [
+    { "name": "Coach", "colour": "F1C40F", "hoist": true, "mentionable": true, "permissions": "1099511627846" },
+    { "name": "Admin", "colour": "E74C3C", "hoist": true, "mentionable": true, "permissions": "8" },
+    { "name": "Client", "colour": "3498DB", "hoist": true, "mentionable": true, "permissions": "0" },
+    { "name": "Alumni", "colour": "9B59B6", "hoist": false, "mentionable": true, "permissions": "0" }
+  ],
+  "uncategorised": [
+    { "name": "rules", "emoji": "✅", "type": "text", "readonly": true }
+  ],
+  "categories": [
+    {
+      "name": "👋 START HERE",
+      "channels": [
+        { "name": "welcome", "emoji": "👋", "type": "text", "readonly": true },
+        { "name": "announcements", "emoji": "🚨", "type": "text", "readonly": true },
+        { "name": "introduce-yourself", "emoji": "🙋", "type": "text" }
+      ]
+    },
+    {
+      "name": "🎓 PROGRAMME",
+      "channels": [
+        { "name": "resources", "emoji": "📚", "type": "text", "readonly": true },
+        { "name": "call-recordings", "emoji": "🎥", "type": "text", "readonly": true },
+        { "name": "ask-a-question", "emoji": "❓", "type": "text" },
+        { "name": "wins", "emoji": "🎉", "type": "text" }
+      ]
+    },
+    {
+      "name": "💬 COMMUNITY",
+      "channels": [
+        { "name": "general", "emoji": "💬", "type": "text" },
+        { "name": "accountability", "emoji": "🔥", "type": "text" },
+        { "name": "lounge", "emoji": "🔊", "type": "voice" }
+      ]
+    },
+    {
+      "name": "🎫 SUPPORT",
+      "channels": [
+        { "name": "open-a-ticket", "emoji": "🎫", "type": "text" }
+      ]
+    },
+    {
+      "name": "🔒 STAFF",
+      "private": true,
+      "channels": [
+        { "name": "staff-chat", "type": "text" },
+        { "name": "client-template-1-on-1", "type": "text" }
+      ]
+    }
+  ],
+  "community": {
+    "rules_channel": "rules",
+    "updates_channel": "announcements"
+  }
+}

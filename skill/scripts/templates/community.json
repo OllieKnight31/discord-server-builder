@@ -1,0 +1,50 @@
+{
+  "name": "Community / Coaching Server",
+  "guild_id": "",
+  "options": {
+    "separator": "・",
+    "existing_channels": "archive",
+    "archive_category_name": "📦 Archive",
+    "staff_roles": ["Moderator", "Founder"]
+  },
+  "roles": [
+    { "name": "Founder", "colour": "F1C40F", "hoist": true, "mentionable": true, "permissions": "8" },
+    { "name": "Moderator", "colour": "5865F2", "hoist": true, "mentionable": true, "permissions": "1099511627846" },
+    { "name": "Member", "colour": "2ECC71", "hoist": false, "mentionable": true, "permissions": "0" }
+  ],
+  "uncategorised": [
+    { "name": "rules", "emoji": "✅", "type": "text", "readonly": true },
+    { "name": "moderator-only", "emoji": "🔒", "type": "text", "private": true }
+  ],
+  "categories": [
+    {
+      "name": "📢 Information",
+      "channels": [
+        { "name": "announcements", "emoji": "🚨", "type": "text", "readonly": true },
+        { "name": "resources", "emoji": "📖", "type": "text", "readonly": true },
+        { "name": "call-recordings", "emoji": "📞", "type": "text", "readonly": true }
+      ]
+    },
+    {
+      "name": "💬 Conversations",
+      "channels": [
+        { "name": "general", "emoji": "🖼️", "type": "text" },
+        { "name": "wins", "emoji": "🎉", "type": "text" },
+        { "name": "sauce", "emoji": "💧", "type": "text" },
+        { "name": "review-system", "emoji": "📚", "type": "text" },
+        { "name": "insta-reels", "emoji": "📲", "type": "text" },
+        { "name": "voice-lounge", "emoji": "🔊", "type": "voice" }
+      ]
+    },
+    {
+      "name": "🔒 1-1 Channels",
+      "channels": [
+        { "name": "client-template-1-on-1", "emoji": "🔒", "type": "text", "private": true }
+      ]
+    }
+  ],
+  "community": {
+    "rules_channel": "rules",
+    "updates_channel": "announcements"
+  }
+}

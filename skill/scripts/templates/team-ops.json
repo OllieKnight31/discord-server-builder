@@ -1,0 +1,70 @@
+{
+  "name": "Internal Team / Agency Ops",
+  "guild_id": "",
+  "options": {
+    "separator": "・",
+    "existing_channels": "archive",
+    "archive_category_name": "📦 Archive",
+    "staff_roles": ["Founder", "Manager", "Admin"]
+  },
+  "roles": [
+    { "name": "Founder", "colour": "F1C40F", "hoist": true, "mentionable": true, "permissions": "8" },
+    { "name": "Manager", "colour": "E67E22", "hoist": true, "mentionable": true, "permissions": "0" },
+    { "name": "Closer", "colour": "3498DB", "hoist": true, "mentionable": true, "permissions": "0" },
+    { "name": "Setter", "colour": "2ECC71", "hoist": true, "mentionable": true, "permissions": "0" }
+  ],
+  "uncategorised": [],
+  "categories": [
+    {
+      "name": "📋 MAIN",
+      "channels": [
+        { "name": "announcements", "emoji": "📢", "type": "text", "readonly": true },
+        { "name": "general", "emoji": "💬", "type": "text" },
+        { "name": "daily-standup", "emoji": "✅", "type": "text" }
+      ]
+    },
+    {
+      "name": "📞 SALES SYSTEMS",
+      "channels": [
+        { "name": "manager-chat", "type": "text" },
+        { "name": "setter-chat", "type": "text" },
+        { "name": "activity-logs", "type": "text" },
+        { "name": "booked-calls", "type": "text" },
+        { "name": "no-shows", "type": "text" },
+        { "name": "cancelled-calls", "type": "text" }
+      ]
+    },
+    {
+      "name": "🗂 DATA",
+      "channels": [
+        { "name": "precall-notes", "type": "text" },
+        { "name": "post-call-notes", "type": "text" },
+        { "name": "setter-eod", "type": "text" },
+        { "name": "closer-eod", "type": "text" },
+        { "name": "new-clients", "type": "text" }
+      ]
+    },
+    {
+      "name": "💳 PAYMENTS",
+      "channels": [
+        { "name": "payments", "type": "text" },
+        { "name": "failed-payments", "type": "text" }
+      ]
+    },
+    {
+      "name": "🔒 LEADERSHIP",
+      "private": true,
+      "channels": [
+        { "name": "leadership-chat", "type": "text" },
+        { "name": "ops-admin", "type": "text" }
+      ]
+    },
+    {
+      "name": "🔊 VOICE",
+      "channels": [
+        { "name": "Team Call", "type": "voice" },
+        { "name": "Focus Room", "type": "voice" }
+      ]
+    }
+  ]
+}
